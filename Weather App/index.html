@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>simple Weather app</h1>
+    <div class="container">
+        <form>
+            <input type="search" placeholder="city name">
+            <input class="search-btn" type="button" value="search">
+            <p class="error">that city doesn't exist</p>
+        </form>
+
+        <div class="city-info">
+            <span class="city"></span>
+            <span class="country"></span>
+        </div>
+        <p class="weather-description"></p>
+        <div class="icon-wrapper">
+            <img alt="icon" class="icon">
+        </div>
+        <div class="temperature-output">
+            <span class="temperature"></span>
+        </div>
+        <div class="loader"></div>
+    </div>
+    
+</body>
+</html>
