@@ -1,0 +1,167 @@
+/*
+============================
+reset/config
+============================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  --space-xs: 0.8rem;
+  --space-sm: 1.6rem;
+  --space-md: 2.4rem;
+  --space-md-lg: 2.8rem;
+  --space-lg: 3.2rem;
+  --space-lg-lg: 3.6rem;
+  --space-xl-sm: 4rem;
+  --space-xl: 4.8rem;
+  --space-xl-l: 5.2rem;
+  --space-xxl: 8rem;
+  --space-xxxl: 16rem;
+  --space-xxxxl: 24rem;
+
+  --clr-primary-1:#1DB954;
+  --clr-primary-2:#191414;
+
+  
+  --clr-neutral-1: #e8f8ee;
+  --clr-neutral-2: #a3a1a1;
+  --clr-neutral-3:;
+  --clr-neutral-4:;
+
+}
+
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: center;
+  background-color: var(--clr-neutral-2);
+
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*
+===========================================
+reset/config end
+===========================================
+
+*/
+
+.player {
+  background-color: var(--clr-neutral-1);
+  margin-top: var(--space-xxxl);
+  margin-inline: auto;
+  min-width: 32rem;
+  width: 32rem;
+  border-radius: 10px;
+  padding-block: var(--space-sm);
+  box-shadow: 5px 5px 15px rgba(0 0 0 / 0.2);
+
+  display:grid;
+  row-gap: var(--space-sm);
+
+}
+
+.image {
+  height: 16rem;
+  width: 28rem;
+  object-fit: cover;
+  object-position: calc();
+  border-radius: 8px;
+
+}
+
+.music-info {
+  width:90%;
+  margin-inline: auto;
+}
+
+.music-info .title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.music-info .artist {
+  margin-top: var(--space-xs);
+  font-size: 1.5rem;
+  font-weight:500 ;
+}
+
+.time-section {
+  width:90%;
+  margin-inline: auto;
+}
+
+.current-time, .total-time {
+  display: inline-block;
+
+  width: 4rem;
+  height: 1.8rem;
+}
+
+.ct-time-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-range {
+  height: 5px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.progress-bar {
+  width:0%;
+  border-radius: 8px;
+  height:4px;
+  background-color: var(--clr-primary-2);
+}
+
+
+.controls-group {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  
+}
+
+.controls-group i{
+ 
+  cursor: pointer; 
+}
+
+.controls-group i:hover{
+  color: var(--clr-primary-1); 
+}
+
+/*
+play-pause button needs a stati width else the gap will be effected
+*/
+.fa-xl {
+  width: 15px;
+}
+

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Tony Nguyen">
+    <meta name="description" content="JS project Music Player"/>
+    <meta name="keywords" content="Js 100 Projects">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" defer src="main.js"></script>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/78ee55c2b7.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="player">
+      
+      <div class="image-container">
+        <img id="album-cover" src="assets/img/song-1.webp" class="image" alt="album cover">
+      </div>
+      
+      <div class="music-info">
+        <h1 id="title" class="title">Electric Chill Machine</h1>
+        <h2 id="artist" class="artist">Unknown Artist 1</h2>
+      </div>
+      <audio src="assets/music/song-1.mp3" id="audio"></audio>
+    
+      <div class="time-section">
+        <div class="ct-time-group">
+          <span id="current-time" class="current-time">0:00</span>
+          <span id="total-time" class="total-time">2:06</span>
+        </div>
+        <div id="progress-range" class="progress-range">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="controls-group">
+        <div>
+          <i id="prevBtn" class="fa-solid fa-backward"></i>
+        </div>
+        <div>
+          <i id="playBtn" class="fa-solid fa-play fa-xl"></i>
+        </div>
+        <div>
+          <i id="nextBtn" class="fa-solid fa-forward"></i>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

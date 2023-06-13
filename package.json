@@ -1,0 +1,19 @@
+{
+  "name": "js-projects",
+  "version": "1.0.0",
+  "description": "the goal is to create 100 JS projects to improve my js skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyNguyen137/JS-projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyNguyen137/JS-projects/issues"
+  },
+  "homepage": "https://github.com/TonyNguyen137/JS-projects#readme"
+}

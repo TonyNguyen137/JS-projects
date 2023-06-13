@@ -1,0 +1,109 @@
+/*
+============================
+reset/config
+============================
+*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    box-sizing: border-box;
+    font-size: 62.5%;
+	
+    --space-xs: 0.8rem;
+    --space-sm: 1.6rem;
+    --space-md: 2.4rem;
+    --space-md-lg: 2.8rem;
+    --space-lg: 3.2rem;
+    --space-lg-lg: 3.6rem;
+    --space-xl-sm: 4rem;
+    --space-xl: 4.8rem;
+    --space-xl-l: 5.2rem;
+    --space-xxl: 8rem;
+    --space-xxxl: 16rem;
+
+    --clr-primary-1:;
+    --clr-primary-2:;
+    
+    --clr-neutral-1:;
+    --clr-neutral-2:;
+    --clr-neutral-3:;
+    --clr-neutral-4:;
+
+}
+
+
+
+body {
+    font-family:;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1;
+    min-height: 100vh;
+    min-height: 100svh;
+
+
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.container {
+    max-width: 120rem;
+
+
+}
+
+a {
+
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+@media query 
+640, > 2 columns
+768, > 3 columns, 60px gap
+1024 > 4 columns, 80px gap, h1 40px, p 18px
+
+
+responsive screens:
+Mobile: 320 - 480
+tablet: 481 - 768;
+laptop: 769 - 1023;
+desktop: min 1024
+
+
+//install
+ "scripts": {
+    "sass": "sass --watch src/scss:dist/css",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+
+   "parcel-bundler": "^1.12.5"
+
+
+//for parcel
+
+von main -> default: index.html
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir ./dist"
+
+
+//html meta tags
+    
+  <meta name="author" content="Tony Nguyen">
+  <meta name="description" content="frontendmentor solution for Intro section with dropdown navigation" />
+  <meta name="keywords" content="frontendmentor, frontendmentor challenge, frontendmentor solution, frontendmentor solution Intro section width dropdown navigation">
+  <meta name="robots" content="index, follow">
